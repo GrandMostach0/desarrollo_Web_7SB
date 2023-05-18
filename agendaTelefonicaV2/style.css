@@ -1,0 +1,176 @@
+:root{
+    --blanco: #F2F2F2;
+    --rojo: #9A0008;
+    --gris: #CCCCCC;
+    --gris2: #999999;
+    --naranja: #F25C05;
+    --negro: #333333;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--gris);
+}
+
+.ancho{
+    max-width: 1200px;
+    margin: 1.5% auto;
+    text-align: center;
+}
+
+header{
+    background-color: var(--negro);
+    color: white;
+    padding: 15px 0px;
+}
+
+main{
+    padding: 3% 0%;
+    background-color: var(--blanco);
+}
+
+.opciones{
+    padding: 10px 0px;
+    font-size: 18px;
+}
+
+.opciones a{
+    color: var(--rojo);
+    margin: auto 15px;
+    padding: 0px 15px;
+    border-right: 3px solid var(--negro);
+}
+
+.opciones a:nth-last-child(1){
+    border-right: none;
+}
+
+img{
+    margin: 30px;
+    width: 28%;
+}
+
+h2{
+    color: var(--naranja);
+    margin: 10px;
+}
+
+h3{
+    color: var(--rojo);
+}
+
+footer{
+    background-color: var(--gris2);
+    padding: 10px;
+}
+
+footer a,p{
+    color: white;
+    font-size: 18px;
+}
+
+.tituloMain{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+
+hr{
+    margin: 20px;
+}
+
+form{
+    text-align: left;
+    margin: 20px 10px;
+}
+
+.opciones1{
+    text-align: left;
+}
+
+.opciones1 a{
+    margin: 20px;
+    font-size: 18px;
+    color: var(--rojo);
+}
+
+form .elemento1, .elemento2{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.labels{
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.elemento1{
+    background-color: var(--gris);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.inputs{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.elemento2{
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 280px;
+}
+
+form button{
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 200px;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.radio-button{
+    padding: 10px;
+}
+
+.radio-button label{
+    margin: 10px;
+}
+
+table{
+    margin: 2%;
+    border: 2px solid red;
+    width: 95%;
+    border-spacing: 5px;
+    border: 1px solid black;
+}
+
+table th{
+    background-color: var(--rojo);
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+table th, table td{
+    border: 1px solid black;
+}
+
+.id-element{
+    color: var(--naranja);
+    width: 60px;
+}

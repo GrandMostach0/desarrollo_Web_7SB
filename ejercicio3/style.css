@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    background-color: cyan;
+}
+
+.ancho{
+    max-width: 700px;
+    margin: auto;
+}
+
+header{
+    text-align: center;
+}
+
+.title{
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+
+img{
+    height: 150px;
+    margin: 20px 0px;
+}
+
+.formulario{
+    border-radius: 8px;
+    padding: 10px 5px;
+    background-color: rgb(191, 191, 191);
+}
+
+.note-form{
+    color: red;
+    padding: 8px 30px;
+    margin: 25px 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+label{
+    font-weight: bold;
+    margin: 0% 2%;
+}
+
+select, input{
+    display: block;
+    width: 90%;
+    margin: 0% 2%;
+    padding: 15px 8px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: white;
+    border: none;
+}
+
+.botones-form{
+    text-align: center;
+    margin: 50px 0px;
+}
+
+button{
+    margin: 0px 8px;
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: red;
+}

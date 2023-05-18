@@ -1,0 +1,22 @@
+:root {
+    --blanco: #F2F2F2;
+    --rojo: #9A0008;
+    --gris: #CCCCCC;
+    --gris2: #999999;
+    --naranja: #F25C05;
+    --negro: #333333;
+}
+
+.header-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.cerrarSesion{
+    background-color: red;
+    color: var(--blanco);
+    margin-right: 15px;
+    padding: 8px 20px;
+}

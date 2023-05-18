@@ -1,0 +1,148 @@
+:root{
+    --azul1: #6298D1;
+    --azul2: #023E73;
+    --rojo1: #D91A1A;
+    --gris1: #F2F2F2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+}
+
+.container-logo{
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--gris1);
+}
+
+#divisor{
+    height: 30px;
+    border: none;
+    background: var(--azul1);
+}
+
+.textAzul{
+    color: var(--azul2);
+}
+
+.textRojo{
+    color: var(--rojo1);
+}
+
+.container-form{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.left{
+    float: left;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.right{
+    float: right;
+    padding: 10px;
+    vertical-align: top;
+}
+
+#divisor-form{
+    clear: both;
+    height:3px;
+    border: none;
+    background-color: var(--azul2);
+}
+
+.inputs{
+    margin: 1% 0px;
+    width: 45%;
+}
+
+.inputs input{
+    font-size: 14px;
+    display: block;
+    height: 40px;
+    padding: 8px 10px;
+    margin: 5% 5%;
+    width: 90%;
+    border: 2px solid var(--azul2);
+    border-radius: 5px;
+}
+
+.divisor-form2{
+    clear: both;
+    padding: 15px 0px;
+    width: 100%;
+    background-color: var(--gris1);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#textEspeficia{
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.container-comentarios{
+    clear: both;
+}
+
+.container-comentarios textarea{
+    padding: 10px;
+    border: 2px solid var(--azul2);
+    border-radius: 8px;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+label{
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#valor{
+    font-size: 14px;
+    height: 40px;
+    padding: 8px 10px;
+    margin-top: 20px;
+    width: 35%;
+    border: 2px solid var(--azul2);
+    border-radius: 5px;
+}
+
+#enviar{
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    padding: 15px 10%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--azul1);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.final{
+    text-align: center;
+    padding: 1% 0%;
+    background-color: var(--azul2);
+    color: white;
+    font-size: 16px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.separador-gracias{
+    border: 2px solid black;
+}
