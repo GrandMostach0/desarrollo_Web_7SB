@@ -1,8 +1,19 @@
 <?php
     require "conexion.php";
+    $rutaservidor = "fotos";
 
     $nombre = $_POST['usuario'];
     $apellido = $_POST['apellido'];
+
+    // ----- FORMA PRA GUARDAR FOTO --
+    $rutatemporal = $_FILES['imagen']['tmp_name'];
+    $nombreimagen = $_FILES['imagen']['name'];
+    $pesofoto = $_FILES['imagen']['size'];
+    $tipofoto = $_FILES['imagen']['type'];
+    
+    $rutadestino = $rutaservidor . "/" . $nombreimagen;
+    // ----- FIN -----
+
     $correo = $_POST['correo'];
     $celular = $_POST['celular'];
     $compania = $_POST['compania'];
@@ -14,8 +25,10 @@
     // echo $celular."<br>";
     // echo $compania."<br>";
     // echo $parentesco."<br>";
+    
+    move_uploaded_file($rutatemporal, $rutadestino);
 
-    $insertar = "INSERT INTO agenda (nombre, apellido, correo, celular, compania, parentesco) VALUES ('$nombre', '$apellido', '$correo', '$celular', '$compania', '$parentesco')";
+    $insertar = "INSERT INTO agenda (nombre, apellido, ruta_foto, correo, celular, compania, parentesco) VALUES ('$nombre', '$apellido', '$rutadestino', '$correo', '$celular', '$compania', '$parentesco')";
 
     $query = mysqli_query($conectar, $insertar);
 

@@ -20,11 +20,11 @@
         ?>
         
         <div class="container-panel">
-            <h2> - - USUARIO - - </h2>
+            <h2> - - GALERIA - - </h2>
             <hr>
             <div class="botones">
-                <a href="altaUsuario.php" class="boton1 boton2"> agregar usuarios </a>
-                <a href="verUsuarios.php" class="boton1"> ver usuarios </a>
+                <a href="altaImagen.php" class="boton1 boton2"> agregar imagen </a>
+                <a href="verImagen.php" class="boton1"> ver imagenes </a>
             </div>
         </div>
         

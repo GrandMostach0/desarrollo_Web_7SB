@@ -19,21 +19,20 @@
         ?>
         
         <div class="container-panel">
-            <h2>Alta usuario</h2>
+            <h2>Agregar Imagen</h2>
             <hr>
             <div class="botones">
                 <a href="panelusuario.php" class="boton1 boton2"> << regresar</a>
             </div>
 
             <div class="formulario2">
-                <form action="">
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre Usuario" class="styleInput">
-                    <input type="text" id="contra" name="contra" placeholder="Contraseña" class="styleInput">
-                    <select name="rol" id="rol" class="styleInput">
-                        <option value="administrador">Administrador</option>
-                        <option value="usuario">Usuario</option>
-                    </select>
-                    <button type="submit" name="Submit" id="Submit" class="botonReal">Guardar Usuario</button>
+                <form action="guardarImagen.php" method="POST" enctype="multipart/form-data">
+                    <h4 style="text-align: left;
+                    ">Agregar imagen:</h4>
+                    <input type="file" name="imagen" class="styleInput" required>
+
+                    <input type="text" name="descripcion" placeholder="Descripcion" class="styleInput">
+                    <button type="submit" name="Submit" id="Submit" class="botonReal">Guardar Imagen</button>
                 </form>
             </div>
 

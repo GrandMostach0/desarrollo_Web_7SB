@@ -23,13 +23,14 @@
                 <a href="verListaAdmin.php">Ver Lista</a>
             </div>
 
-            <form action="guardar.php" method="post" name="formulario1">
+            <form action="guardar.php" method="POST" name="formulario1">
                 
                 <div class="elementos">
                     
                     <div class="labels">
                         <label class="elemento1" for="nombre">Nombre:</label>
                         <label class="elemento1" for="apellido">Apellido:</label>
+                        <label class="elemento1" for="imagen">Subir foto:</label>
                         <label class="elemento1" for="correo">Email:</label>
                         <label class="elemento1" for="celular">Celular:</label>
                         <label class="elemento1" for="compania">Compañia:</label>
@@ -37,18 +38,19 @@
                     </div>
 
                     <div class="inputs">
-                        <input class="elemento2" type="text" id="usuario" name="usuario">
-                        <input class="elemento2" type="text" id="apellido" name="apellido">
-                        <input class="elemento2" type="email" id="correo" name="correo">
-                        <input class="elemento2" type="tel" id="celular" name="celular" maxlength="10">
+                        <input class="elemento2" type="text" id="usuario" name="usuario" required>
+                        <input class="elemento2" type="text" id="apellido" name="apellido" required>
+                        <input type="file" class="elemento2" name="imagen" required>
+                        <input class="elemento2" type="email" id="correo" name="correo" required>
+                        <input class="elemento2" type="tel" id="celular" name="celular" maxlength="10" required>
                         
                         <div class="radio-button">
-                            <label for="telcel"><input type="radio" name="compania" value="TELCEL">TELCEL</label>
-                            <label for="telcel"><input type="radio" name="compania" value="AT&T">AT&T</label>
-                            <label for="telcel"><input type="radio" name="compania" value="MOVISTAR">MOVISTAR</label>
+                            <label for="telcel"><input type="radio" name="compania" value="TELCEL" required>TELCEL</label>
+                            <label for="telcel"><input type="radio" name="compania" value="AT&T" required>AT&T</label>
+                            <label for="telcel"><input type="radio" name="compania" value="MOVISTAR" required>MOVISTAR</label>
                         </div>
 
-                        <select class="elemento2" name="parentesco" id="parentesco">
+                        <select class="elemento2" name="parentesco" id="parentesco" required>
                             <option value="">Escoge una opcion</option>
                             <option value="Escuela">Escuela</option>
                             <option value="Familia">Familia</option>
@@ -56,7 +58,7 @@
                             <option value="Conocido">Conocido</option>
                         </select>
 
-                        <button type="submit" name="Submit" id="Submit">Acceder Contacto</button>
+                        <button type="submit" name="Submit" id="Submit">Guardar Contacto</button>
                         <button type="reset" name="Reset" id="Reset">Borrar datos</button>
                     </div>
                 </div>

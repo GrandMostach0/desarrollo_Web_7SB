@@ -30,6 +30,7 @@
             <table>
                 <tr>
                     <th class="id-element">ID</th>
+                    <th class="id-element">FOTO</th>
                     <th>NOMBRE</th>
                     <th>APELLIDO</th>
                     <th>CORREO</th>
@@ -49,6 +50,7 @@
 
                 <tr>
                     <td><?php echo $row['id'];?></td>
+                    <td><img src="<?php echo $row['ruta_foto'];?>" alt=""></td>
                     <td><?php echo $row['nombre'];?></td>
                     <td><?php echo $row['apellido'];?></td>
                     <td><?php echo $row['correo'];?></td>
