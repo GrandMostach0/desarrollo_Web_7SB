@@ -1,0 +1,232 @@
+*:root{
+    --color1: #515151;
+    --color2: #47413C;
+    --color3: #765F4E;
+    --color6: #B9A587;
+    --color4: #E1E1E1;
+    --color5: #333333;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html{
+    background-color: var(--color5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-main{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+.header{
+    padding: 5px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.header p{
+    font-size: 18px;
+}
+
+.nav-menu{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-menu a{
+    margin: 30px;
+    text-decoration: none;
+}
+
+.iniciar-sesion{
+    margin: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.iniciar-sesion a{
+    text-decoration: none;
+}
+
+/* ----- [ ESTILO DEL BANNER ] -----*/
+
+.banner{
+    margin-top: 10px;
+    padding: 50px 10px;
+    font-size: 25px;
+    text-align: center;
+    background: linear-gradient(var(--color5), var(--color2));
+}
+
+.text-banner{
+    margin-right: 100px;
+    padding-bottom: 30px;
+    position: relative;
+    width: 60%;
+    margin-left: 35%;
+}
+
+.banner img {
+    position: absolute;
+    right: 50%;
+    top: 20%;
+}
+
+.text-banner p{
+    font-size: 14px;
+    margin: 50px 0px;
+}
+
+.text-banner a{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: var(--color6);
+}
+
+/* ESTILO DE LAS CARTAS DEL MARQUEE */
+.container-marquee {
+    margin: 50px 0px;
+}
+
+.card-marquee{
+    width: 503px;
+    padding: 40px 10px;
+    background: linear-gradient(var(--color2), var(--color5));
+    border-radius: 50px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.card-marquee img{
+    width: 190px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text-card-marquee{
+    display: inline-block;
+    vertical-align: middle;
+    width: 272px;
+    text-align: center;
+    padding: 10px;
+}
+
+.title-marquee{
+    color: var(--color6);
+}
+
+.text-card-marquee p{
+    font-size: 14px;
+    margin: 15px 0px;
+}
+
+/*PRODUCTOS*/
+
+.container-separador{
+    max-width: 1350px;
+    margin: 50px auto;
+}
+
+.container-productos-card{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+}
+
+.card-producto{
+    width: 345px;
+    padding: 10px;
+    background-color: var(--color3);
+    border-radius: 20px;
+    margin: 15px auto;
+}
+
+.card-producto img{
+    width: 130px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text-card-prodcuto{
+    width: 180px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/*auxiliares*/
+.textCentrado{
+    text-align: center;
+}
+
+/*----------- NOSOTROS -----------*/
+.nosotros{
+    background: linear-gradient(var(--color2), var(--color5));
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.container-nosotros{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-text-nosotros{
+    width: 40%;
+}
+
+.container-nosotros img{
+    width: 20%;
+}
+
+/*--- FOOTER -----*/
+
+.footer{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(var(--color5), var(--color2));
+    padding: 10px;
+    box-shadow: 4px 4px 20px 5px black;
+}
+
+.footer a{
+    text-decoration: none;
+    color: var(--color6);
+}
+
+.informacion{
+    width: 25%;
+    font-weight: normal;
+}
+
+.facebook-f{
+    width: 20px;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.instagram{
+    width: 28px;
+    margin: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}

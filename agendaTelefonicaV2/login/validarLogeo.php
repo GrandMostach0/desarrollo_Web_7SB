@@ -1,4 +1,5 @@
 <?php
+
     session_start();
     $varSession = $_SESSION['username'];
 
