@@ -1,5 +1,5 @@
         <div class="menu">
-            <h2>[NOMBRE ADMIN]</h2>
+            <h2 style="color: white;">[ PANEL ADMINISTRATIVO ]</h2>
 
             <!-- MENU BOTONES -->
             <div class="container-botones-menu">
