@@ -5,7 +5,7 @@
             <div class="container-botones-menu">
                 <a class="boton cafe" href="AltaPersonal.php">Alta Personal</a>
                 <a class="boton cafe" href="verPersonal.php">Ver Personal</a>
-                <a class="boton cafe" href="">Alta Producto</a>
+                <a class="boton cafe" href="AltaProducto.php">Alta Producto</a>
                 <a class="boton cafe" href="">Ver Productos</a>
                 <a class="boton cafe" href="">Ver Horario</a>
             </div>
