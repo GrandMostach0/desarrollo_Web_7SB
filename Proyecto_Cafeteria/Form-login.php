@@ -21,7 +21,7 @@
         </div>
 
         <div class="container-form">
-            <form action="login/panel-menu.php" method="post" name="login">
+            <form action="logueo.php" method="post" name="login">
                 <label class="elem-lbl-1" for="nombre">Nombre:</label>
                 <input type="text" class="elem1" name="nombre">
                 <label class="elem-lbl-1" for="contrasenia">Contraseña:</label>
