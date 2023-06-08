@@ -13,8 +13,8 @@
 
     $conectar = mysqli_connect($host, $user, $pass, $bd);
 
-    if($conectar){
-        echo "Se conecto correctamente a la base de datos";
-    }else{
-        echo "No se pudo conectar a la base de datos";
-    }
+    // if($conectar){
+    //     echo "Se conecto correctamente a la base de datos";
+    // }else{
+    //     echo "No se pudo conectar a la base de datos";
+    // }
