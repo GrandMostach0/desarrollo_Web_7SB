@@ -59,7 +59,7 @@
                         </div>
 
                         <div class="eliminar-card">
-                            <a href="" class="boton rojo" style="text-decoration: none;"> ELIMINAR </a>
+                            <a href="eliminar.php?id_personal=<?php echo $row['id_personal']; ?>" class="boton rojo" style="text-decoration: none;"> ELIMINAR </a>
                         </div>
                     </div>
                 </div>
