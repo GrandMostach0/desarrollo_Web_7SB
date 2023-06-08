@@ -66,3 +66,42 @@
     margin-top: 30px;
     margin-bottom: 15px;
 }
+
+/***** [VER PERSONAL] *******/
+.card-personal{
+    padding: 15px;
+    margin: 10px 5px;
+}
+
+.title-card-personal{
+    background-color: #765F4E;
+    border-radius: 20px 0px 20px 0px;
+    padding: 5px;
+}
+
+.info-card-personal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title-campos{
+    width: 20%;
+    text-align: right;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.dato-campos{
+    width: 60%;
+    padding: 10px 5px;
+    text-align: left;
+}
+
+.title-campos p, .dato-campos p{
+    margin: 8px 0px;
+}
+
+.eliminar-card{
+    width: 15%;
+}
