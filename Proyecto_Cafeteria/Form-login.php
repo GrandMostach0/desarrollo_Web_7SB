@@ -23,13 +23,13 @@
         <div class="container-form">
             <form action="logueo.php" method="post" name="login">
                 <label class="elem-lbl-1" for="nombre">Nombre:</label>
-                <input type="text" class="elem1" name="nombre">
+                <input type="text" id="nombre" class="elem1" name="nombre">
                 <label class="elem-lbl-1" for="contrasenia">Contraseña:</label>
-                <input type="password" class="elem1" name="contrasenia">
+                <input type="password" id="contrasenia" class="elem1" name="contrasenia">
 
                 <div class="botones-form">
                     <a href="index.php" class="boton rojo">Volver</a>
-                    <button type="submit" name="Submit" class="boton verde">Iniciar Sesión</button>
+                    <button type="button" onclick="valida_envia()" name="Submit" class="boton verde">Iniciar Sesión</button>
                 </div>
 
             </form>
@@ -52,6 +52,26 @@
 
             <p>Tel: <a href="">+16508637580</a></p>
         </div>
+
+    <!-- VALIDACION DE INPUTS -->
+    <script>
+        function valida_envia() {
+            if(document.getElementById("nombre").value.length == 0){
+                alert("Tienes el campo de NOMBRE vacio");
+                document.getElementById("nombre").focus();
+                return 0;
+            }
+
+            if (document.getElementById("contrasenia").value.length == 0) {
+                alert("Tienes el campo de CONTRASEÑA vacio");
+                document.getElementById("contrasenia").focus();
+                return 0;
+            }
+
+            document.login.submit();
+
+        }
+    </script>
 
 </body>
 </html>
