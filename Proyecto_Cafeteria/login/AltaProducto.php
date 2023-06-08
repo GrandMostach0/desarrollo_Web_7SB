@@ -31,7 +31,7 @@
             </div>
 
             <div class="container-form-personal">
-                <form action="" method="post" name="form-alta-personal">
+                <form action="altaProductoBD.php" method="post" name="AltaProducto">
                     <div class="labels">
                         <label for="nombre_producto">*Nombre producto:</label>
                         <label for="precio">*Precio:</label>
@@ -40,15 +40,15 @@
                     </div>
 
                     <div class="inputs">
-                        <input type="text" name="nombre_producto" class="elemento1">
-                        <input type="number" name="precio" class="elemento1">
-                        <input type="number" name="cantidad" class="elemento1">
-                        <input type="file" name="imagen" class="elemento1">
+                        <input type="text" id="nombre_producto" name="nombre_producto" class="elemento1">
+                        <input type="number" id="precio" name="precio" class="elemento1">
+                        <input type="number" id="cantidad" name="cantidad" class="elemento1">
+                        <input type="file" id="imagen" name="image" class="elemento1">
                     </div>
 
                     <div class="botones-form2">
-                        <button type="clear" name="Clear" class="boton rojo">Borrar Campos</button>
-                        <button type="submit" name="Submit" class="boton verde">Guardar</button>
+                        <a style="text-decoration: none;" href="" type="clear" name="Clear" class="boton rojo">Borrar Campos</a>
+                        <button type="button" onclick="valida_envia()" name="Submit" class="boton verde">Guardar</button>
                     </div>
                 </form>
             </div>
@@ -63,6 +63,38 @@
     <?php
         include "footerCaseLogin.php";
     ?>
+
+    <!-- SCRIP VALDICION INPUTS -->
+    <script>
+        function valida_envia() {
+            if(document.getElementById("nombre_producto").value.length == 0){
+                alert("Tienes el campo de NOMBRE PRODUCTO vacio");
+                document.getElementById("nombre_producto").focus();
+                return 0;
+            }
+
+            if (document.getElementById("precio").value.length == 0) {
+                alert("Tienes el campo de PRECIO vacio");
+                document.getElementById("precio").focus();
+                return 0;
+            }
+
+            if(document.getElementById("cantidad").value.length == 0){
+                alert("Tienes el campo de CANTIDAD vacio");
+                document.getElementById("cantidad").focus();
+                return 0;
+            }
+
+            if (document.getElementById("imagen").value.length == 0) {
+                alert("Tienes el campo de IMAGEN vacio");
+                document.getElementById("imagen").focus();
+                return 0;
+            }
+
+            document.AltaProducto.submit();
+
+        }
+    </script>
 
 </body>
 </html>

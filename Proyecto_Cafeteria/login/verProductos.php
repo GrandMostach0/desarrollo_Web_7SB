@@ -13,6 +13,8 @@
     <!-- HEADER-TITLE -->
     <?php
         include "upperCaseLogin.php";
+        include "validarInicioSesion.php";
+        require "../conexion.php";
     ?>
 
     <div class="container-opciones">
@@ -31,10 +33,17 @@
 
             <div class="container-card-personal">
 
+                <?php
+                    $lista_productos = "SELECT * FROM productos ORDER BY id_producto ASC";
+                    $resultado = mysqli_query($conectar, $lista_productos);
+
+                    while($row = mysqli_fetch_assoc($resultado)){
+                ?>
+
                 <div class="card-personal">
                     <div class="info-card-personal producto">
                         <div class="img-producto">
-                            <img src="../image/cafe1.png" alt="CAFE_1">
+                            <img src="../image/cafe1.png" alt="  ">
                         </div>
 
                         <div class="title-campos">
@@ -43,37 +52,22 @@
                         </div>
 
                         <div class="dato-campos">
-                            <p>$50</p>
-                            <p>adfafda</p>
+                            <p>$ <?php echo $row['precio_producto']?> </p>
+                            <p><?php echo $row['nombre_producto']?></p>
                         </div>
 
                         <div class="eliminar-producto">
-                            <a href="" style="text-decoration: none;"> ELIMINAR </a>
+                            <a href="eliminarProducto.php?id_producto=<?php echo $row['id_producto']; ?>" style="text-decoration: none;"> ELIMINAR </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="card-personal">
-                    <div class="info-card-personal producto">
-                        <div class="img-producto">
-                            <img src="../image/cafe1.png" alt="CAFE_1">
-                        </div>
+                <?php
+                    }
+                    //liberar los datos
+                    mysqli_free_result($resultado);
 
-                        <div class="title-campos">
-                            <p class="textAmarillo">Precio:</p>
-                            <p class="textAmarillo">Nombre:</p>
-                        </div>
-
-                        <div class="dato-campos">
-                            <p>$50</p>
-                            <p>adfafda</p>
-                        </div>
-
-                        <div class="eliminar-producto">
-                            <a href="" style="text-decoration: none;"> ELIMINAR </a>
-                        </div>
-                    </div>
-                </div>
+                ?>
 
             </div>
 
