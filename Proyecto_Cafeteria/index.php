@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
+    <?php
+        require "conexion.php";
+    ?>
+
     <div class="ancho">
         
         <!-- MENU -->
@@ -84,60 +88,28 @@
 
             <div class="container-productos-card">
 
+                <?php
+                    $lista_productos = "SELECT * FROM productos ORDER BY id_producto ASC";
+                    $resultado = mysqli_query($conectar, $lista_productos);
+
+                    while($row = mysqli_fetch_assoc($resultado)){
+                ?>
+
                 <div class="card-producto">
                     <img src="image/cafe1.png" alt="Cafe1">
 
                     <div class="text-card-prodcuto">
-                        <h1>$59</h1>
-                        <p>RISTRETTO</p>
+                        <h1>$ <?php echo $row['precio_producto']?></h1>
+                        <p><?php echo $row['nombre_producto']?></p>
                     </div>
                 </div>
 
-                <div class="card-producto">
-                    <img src="image/cafe1.png" alt="Cafe1">
-                
-                    <div class="text-card-prodcuto">
-                        <h1>$59</h1>
-                        <p>RISTRETTO</p>
-                    </div>
-                </div>
+                <?php
+                    }
+                    //liberar los datos
+                    mysqli_free_result($resultado);
 
-                <div class="card-producto">
-                    <img src="image/cafe1.png" alt="Cafe1">
-                
-                    <div class="text-card-prodcuto">
-                        <h1>$59</h1>
-                        <p>RISTRETTO</p>
-                    </div>
-                </div>
-
-                <div class="card-producto">
-                    <img src="image/cafe1.png" alt="Cafe1">
-                
-                    <div class="text-card-prodcuto">
-                        <h1>$59</h1>
-                        <p>RISTRETTO</p>
-                    </div>
-                </div>
-                
-                <div class="card-producto">
-                    <img src="image/cafe1.png" alt="Cafe1">
-                
-                    <div class="text-card-prodcuto">
-                        <h1>$59</h1>
-                        <p>RISTRETTO</p>
-                    </div>
-                </div>
-                
-                <div class="card-producto">
-                    <img src="image/cafe1.png" alt="Cafe1">
-                
-                    <div class="text-card-prodcuto">
-                        <h1>$59</h1>
-                        <p>RISTRETTO</p>
-                    </div>
-                </div>
-
+                ?>
             </div>
         </div>
 
