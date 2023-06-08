@@ -22,5 +22,4 @@
 
     //SIRVE PARA REDIRIJIR AL USUARIO A OTRA PAGINA
     header("localtion: gracias.php");
-
 ?>
