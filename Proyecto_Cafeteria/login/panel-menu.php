@@ -12,6 +12,7 @@
     <!-- HEADER-TITLE -->
     <?php
         include "upperCaseLogin.php";
+        include "validarInicioSesion.php";
     ?>
 
     <div class="container-opciones">

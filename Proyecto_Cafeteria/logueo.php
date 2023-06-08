@@ -17,7 +17,7 @@
 
     //verificamos
     if($array['contar'] > 0){
-        $_SESSION['username'] = $usuario;
+        $_SESSION['username'] = $nombre;
         header("location: login/panel-menu.php");
     }else{
         header("location: Form-login.php");
