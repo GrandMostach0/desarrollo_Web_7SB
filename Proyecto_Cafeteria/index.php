@@ -11,7 +11,8 @@
 </head>
 <body>
     <div class="ancho">
-
+        
+        <!-- MENU -->
         <div class="header-main">
             <div class="header">
                 <h1>Place & Delirio</h1>
@@ -26,9 +27,10 @@
             </nav>
             
             <div class="iniciar-sesion">
-                <a href="login/index.html">Iniciar Sesión</a>
+                <a href="Form-login.php">Iniciar Sesión</a>
             </div>
         </div>
+
         <!-- BANNER -->
         <div class="banner">
             <img src="image/bannerCafe.png" alt="">
