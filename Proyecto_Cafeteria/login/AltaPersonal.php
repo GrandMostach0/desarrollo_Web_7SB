@@ -47,7 +47,7 @@
                     </div>
 
                     <div class="botones-form2">
-                        <a class="boton rojo" href="">Limpiar Campos</a>
+                        <button type="clear" name="Clear" class="boton rojo">Borrar Campos</button>
                         <button type="submit" name="Submit" class="boton verde">Guardar</button>
                     </div>
                 </form>
