@@ -22,3 +22,47 @@
     display: inline-block;
     vertical-align: middle;
 }
+
+/*-- FORM ALTA PERSONAL --*/
+.container-form-personal{
+    margin: 50px 0px;
+}
+
+.labels{
+    width: 10%;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+}
+
+.labels label{
+    display: block;
+    margin: 22px 0px;
+}
+
+.inputs{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin: auto;
+}
+
+.inputs input{
+    width: 90%;
+    margin: 10px 0px;
+}
+
+.elemento1{
+    padding: 8px 10px;
+    border-radius: 20px;
+}
+
+.elemento1:focus{
+    outline: none;
+}
+
+.botones-form2{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}

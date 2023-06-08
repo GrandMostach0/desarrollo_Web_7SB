@@ -31,21 +31,27 @@
             </div>
 
             <div class="container-form-personal">
-            <form action="" method="post" name="form-alta-personal">
-                <div class="labels">
-                    <label for="nombre">*Nombre(s):</label>
-                    <label for="contraseia">*Contraseñia:</label>
-                    <label for="correo">E-mail:</label>
-                    <label for="telefono">*Telefono:</label>
-                    <label for="edad">Edad:</label>
-                </div>
+                <form action="" method="post" name="form-alta-personal">
+                    <div class="labels">
+                        <label for="nombre">*Nombre(s):</label>
+                        <label for="contraseia">*Contraseña:</label>
+                        <label for="correo">*E-mail:</label>
+                        <label for="telefono">*Telefono:</label>
+                    </div>
 
-                <div class="inputs">
-                    <input type="text" name="nombre">
-                </div>
+                    <div class="inputs">
+                        <input type="text" name="nombre" class="elemento1">
+                        <input type="password" name="contrasenia" class="elemento1">
+                        <input type="email" name="correo" class="elemento1">
+                        <input type="number" name="telefono" class="elemento1">
+                    </div>
 
-            </form>
-        </div>
+                    <div class="botones-form2">
+                        <a class="boton rojo" href="">Limpiar Campos</a>
+                        <button type="submit" name="Submit" class="boton verde">Guardar</button>
+                    </div>
+                </form>
+            </div>
 
         </div>
 
